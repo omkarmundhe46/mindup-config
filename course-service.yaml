@@ -1,0 +1,32 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: course-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/coursedb
+    username: user
+    password: user123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 9091
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    env:
+      enabled: true
+info:
+  app:
+    name: "Course Service"
+    description:  "This is course service. Auto Refresh using actuator endpoint, refresh using busrefresh. This is course service.Handles all the course related works"
+    version: "1.2"
