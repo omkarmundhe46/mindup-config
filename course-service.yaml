@@ -4,7 +4,7 @@ spring:
   application:
     name: course-service
   datasource:
-    url: jdbc:postgresql://postgres-db:5432/coursedb       
+    url: jdbc:postgresql://localhost:5432/coursedb       
     username: user
     password: user123
   jpa:
@@ -16,7 +16,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://discovery:8761/eureka
+      defaultZone: http://localhost:8761/eureka
 management:
   endpoints:
     web:
