@@ -2,7 +2,7 @@ spring:
   application:
     name: course-service
   datasource:
-    url: jdbc:postgresql://localhost:5433/coursedb        // 5432  -->  5433
+    url: jdbc:postgresql://localhost:5432/coursedb
     username: user
     password: user123
   jpa:
